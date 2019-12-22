@@ -1,5 +1,7 @@
 # Anleitung zum Patchen der App "LibreLink" unter Windows #
 
+Fork of TinoKossmann/LibreLink-Xdrip-Patch adding Arch Linux dependency installer
+
 **Grundsätzliches:**
 
 Wenn LibreLink als erstes "Gerät" mit einem FreeStyle Libre 2 gekoppelt wird, empfängt es permanent Bluetooth-Daten, um den aktuellen Gewebezucker-Wert zu berechnen und ggf. Alarm zu geben. Angezeigt werden diese Daten jedoch nur, wenn "klassisch" gescannt (der Sensor per NFC ausgelesen) wird. Dieser Patch ermöglicht nun, dass [xDrip+](https://github.com/jamorham/xDrip-plus) die errechneten Werte von LibreLink auslesen und permanent anzeigen kann - ein Scannen per NFC ist nicht mehr nötig.
